@@ -14,7 +14,7 @@ Vue 2 CDN + CSS.
 
 Hope you'd like it!
 
-<a href="https://barakz13.github.io/appsus" target="blank">Link to GitHub Pages</a>
+<a href="https://barakz13.github.io/appsus" target="_blank">Link to GitHub Pages</a>
 
 ![My Image](asfull.png)
 ![My Image](asmobile.jpeg)
