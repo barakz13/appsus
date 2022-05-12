@@ -1,0 +1,28 @@
+.add-menu-first-con {
+  /* background-color: brown; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.add-menu-text {
+  text-align: center;
+  width: 100%;
+}
+.add-menu-todo-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.addnote-menu-last-con > * {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.search-menu-btn,
+.add-menu-btn {
+  font-size: 25px;
+  cursor: pointer;
+}
+.add-menu-btn:hover {
+  text-shadow: 1 1 32px black;
+}

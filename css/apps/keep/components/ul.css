@@ -1,0 +1,7 @@
+ul {
+    list-style-type:none;
+}
+
+.ul-style {
+    word-break: break-all;
+}

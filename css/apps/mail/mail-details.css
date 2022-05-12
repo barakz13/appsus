@@ -1,0 +1,79 @@
+.mail-details-container {
+    width: 90%;
+    margin-left: 5%;
+    height: 80vh;
+    text-align: center;
+    border-style: none solid none solid;
+    border-width: 1px;
+}
+
+.mail-details {
+    height: 100%;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.mail-details-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mail-details-subject {
+    line-break: anywhere;
+    text-align: start;
+    width: 85%;
+    margin-bottom: 0px;
+}
+
+.btn-save-as-note {
+    background: none;
+    border: none;
+}
+
+.mail-router-link-save {
+    text-decoration: none;
+    color: black;
+    margin-right: 19px;
+}
+
+.mail-router-link-back {
+    text-decoration: none;
+    color: black;
+}
+
+.mail-details-body {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.mail-from {
+    margin-top: -36px;
+}
+
+.mail-date {
+    margin-bottom: -30px;
+}
+
+.mail-body {
+    text-align: start;
+    line-height: 35px;
+}
+
+@media (max-width: 750px) {
+    .mail-details-container {
+        height: 862px;
+        border-bottom: none;
+    }
+
+    .mail-details-body {
+        justify-content: flex-start;
+    }
+
+    .mail-from {
+        margin-top: 0px;
+    }
+}

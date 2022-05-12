@@ -1,0 +1,67 @@
+.mail-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.main-options {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 200px;
+}
+
+.misc {
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.btn-compose {
+  text-decoration: none;
+  font-size: 35px;
+  color: #0049b7;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 50%;
+  width: 56px;
+  height: 50px;
+  padding-left: 17px;
+  padding-top: 5px;
+  transition: transform 0.1s ease-in-out;
+}
+
+.filters {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.select-sort {
+  width: 50%;
+  margin-left: 25%;
+}
+
+.btn-compose:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 750px) {
+  .filters {
+    width: 90%;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .main-options {
+    margin-bottom: 22px;
+    margin-top: 10px;
+  }
+}

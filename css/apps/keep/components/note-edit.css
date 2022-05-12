@@ -1,0 +1,46 @@
+.note-edit-video-firstline {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+}
+
+
+
+
+.note-edit-todos-list {
+    list-style-type:none;
+    padding:0px;
+}
+.note-edit-todo-text-second {
+    margin-right:15px;
+}
+.note-edit-todo-text {
+    margin-right:10px;
+}
+
+
+.note-edit-todo-firstline {
+    display:flex;
+    flex-direction: row;
+}
+
+.todo-edit-item {
+    color:white;
+}
+
+.note-edit-img-firstline-controls {
+    display:flex;
+    justify-content: space-around;
+}
+.note-edit-img-firstline {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.note-img-edit {
+    width:100%;
+    height:100%;
+    border-radius:14px;
+}

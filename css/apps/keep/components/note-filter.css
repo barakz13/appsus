@@ -1,0 +1,31 @@
+.note-filter-con > input {
+    height:30px;
+}
+.note-filter-con {
+    display:flex;
+}
+.filter-menu {
+    border-radius:10px;
+    padding:5px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    display:flex;
+    flex-direction: row;
+}
+
+.filter-menu > * {
+    font-family: sans-serif;
+    margin:5px;
+}
+
+
+
+.note-filter-middle {
+    min-width:5px;
+}
+.compose-text {
+    height:150px;
+    width:90%;
+    resize: none;
+}

@@ -1,0 +1,30 @@
+.fa-floppy-disk {
+    color:gray;
+}
+.fa-check {
+    color:green;
+}
+.fa-list-check {
+    color:blue;
+}
+.fa-circle-xmark {
+    color:red;
+}
+.fa-video {
+    color:blueviolet;
+}
+
+.fa-text {
+    color:black;
+}
+
+.fa-magnifying-glass {
+    padding-top:2px;
+    padding-left:10px;
+    padding-right:0px;
+    color:blue;
+}
+
+.vmark {
+    padding-left:7px;
+}
