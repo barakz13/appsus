@@ -1,33 +1,28 @@
 .main-compose-con {
-    width:100vw;
-    height:400px;
-    display:flex;
-    align-items: center;
-    margin:0 auto;
-    justify-content: center;
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: center;
 }
 
 .compose-title {
-    font-size:30px;
-    /* display:flex;
+  font-size: 30px;
+  /* display:flex;
     justify-content: center; */
-    text-align:center;
+  text-align: center;
 }
-
 
 .addnote-con-compose {
-    border-radius:15px;
-    padding:10px;
-    background-color: white;
-    width:100%;
-    height:90%;
-    display:flex;
-    border:1px solid black;
-    align-items:stretch;
-    justify-content: space-between;
-    flex-direction: column;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: white;
+  width: 100%;
+  height: 90%;
+  display: flex;
+  border: 1px solid black;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-direction: column;
 }
-
-
-
-

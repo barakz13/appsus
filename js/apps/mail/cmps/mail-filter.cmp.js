@@ -28,9 +28,5 @@ export default {
     setFilter() {
       this.$emit('filtered', this.filterBy);
     },
-    // switchSelect(event) {
-    //     this.optionSelected = event.target.value;
-    //     this.$emit('selected', this.optionSelected);
-    // }
   },
 };

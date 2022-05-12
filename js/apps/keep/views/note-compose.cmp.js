@@ -1,6 +1,6 @@
-import { utilService } from "../services/util-service.js";
-import { router } from "../../../router.js";
-import { noteService } from "../services/note.service.js";
+import { utilService } from '../services/util-service.js';
+import { router } from '../../../router.js';
+import { noteService } from '../services/note.service.js';
 export default {
   props: [],
   template: `
@@ -28,25 +28,24 @@ export default {
     `,
   data() {
     return {
-        note:null,
-        noteCon:0,
+      note: null,
+      noteCon: 0,
       error: null,
-      todoItem: "",
+      todoItem: '',
       placeHolderMode: true,
     };
   },
   created() {
-    if (!this.$route.params.note) return
+    if (!this.$route.params.note) return;
     var urlStr = this.$route.params.note;
-    var params = urlStr.split("&");
-    var subject = params[0].split("=")[1];
-    var body = params[1].split("=")[1];
+    var params = urlStr.split('&');
+    var subject = params[0].split('=')[1];
+    var body = params[1].split('=')[1];
 
-
-    var fullText = subject + "\r" + body
+    var fullText = subject + '\r' + body;
     var noteObj = {
       id: null,
-      type: "note-txt",
+      type: 'note-txt',
       isPinned: false,
       info: {
         txt: fullText,
@@ -57,34 +56,31 @@ export default {
     };
     this.note = noteObj;
     this.noteCon += 1;
-
-    
-
   },
   mounted() {},
   computed: {},
   methods: {
     addNote() {
-        noteService.save(this.note).then(() => router.push('/keep/'))
+      noteService.save(this.note).then(() => router.push('/keep/'));
     },
     closeCompose() {
-        router.push('/keep/')
+      router.push('/keep/');
     },
     randomNoteColor() {
       var colors = [
-        "#01BEFE",
-        "#FFDD00",
-        "#FF7D00",
-        "#FF006D",
-        "#ADFF02",
-        "#8F00FF",
+        '#01BEFE',
+        '#FFDD00',
+        '#FF7D00',
+        '#FF006D',
+        '#ADFF02',
+        '#8F00FF',
       ];
       return colors[this.getRandomIntInclusive(0, colors.length - 1)];
     },
     getRandomIntInclusive(min, max) {
       min = Math.ceil(min);
       max = Math.floor(max);
-      return Math.floor(Math.random() * (max - min + 1) + min); //The maximum is inclusive and the minimum is inclusive
+      return Math.floor(Math.random() * (max - min + 1) + min);
     },
   },
 };

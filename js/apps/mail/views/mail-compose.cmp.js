@@ -1,10 +1,10 @@
-import { loggedinUser } from "../services/mail-service.js";
-import { mailService } from "../services/mail-service.js";
-import { noteService } from "../../keep/services/note.service.js";
+import { loggedinUser } from '../services/mail-service.js';
+import { mailService } from '../services/mail-service.js';
+import { noteService } from '../../keep/services/note.service.js';
 
 export default {
-    props: ['outsideSubject', 'outsideBody'],
-    template: `
+  props: ['outsideSubject', 'outsideBody'],
+  template: `
     <section class="app-main">
         <div class="mail-compose-container">
             <div class="mail-compose">
@@ -24,51 +24,45 @@ export default {
         </div>
     </section>
     `,
-    components: {
-        mailService,
-        noteService
+  components: {
+    mailService,
+    noteService,
+  },
+  created() {
+    if (!this.$route.params.note) return;
+    var urlStr = this.$route.params.note;
+    var params = urlStr.split('&');
+    var subject = params[0].split('=')[1];
+    var body = params[1].split('=')[1];
+    if (subject) this.mail.subject = subject;
+    if (body) this.mail.body = body;
+  },
+  mounted() {},
+  data() {
+    return {
+      mail: {
+        fullName: loggedinUser.fullname,
+        address: '',
+        subject: '',
+        body: '',
+      },
+    };
+  },
+  methods: {
+    addMail() {
+      if (!this.mail.address || !this.mail.subject || !this.mail.body) return;
+      var newMail = {
+        fullName: this.mail.fullName,
+        address: this.mail.address,
+        subject: this.mail.subject,
+        body: this.mail.body,
+        isRead: true,
+        sentAt: Date.now(),
+      };
+      mailService.save(newMail);
+      this.$router.push('/mail');
     },
-    created() {
-        if (!this.$route.params.note) return
-        
-        var urlStr = this.$route.params.note
-        var params = urlStr.split("&")
-        var subject = params[0].split("=")[1]
-        var body = params[1].split("=")[1]
-        if (subject) this.mail.subject = subject
-        if (body) this.mail.body = body
-    },
-    mounted() {
-
-    },
-    data() {
-        return {
-            mail: {
-                fullName: loggedinUser.fullname,
-                address: '',
-                subject: '',
-                body: '',
-            },
-        }
-    },
-    methods: {
-        addMail() {
-            if (!this.mail.address || !this.mail.subject || !this.mail.body) return;
-            var newMail = {
-                fullName: this.mail.fullName,
-                address: this.mail.address,
-                subject: this.mail.subject,
-                body: this.mail.body,
-                isRead: true,
-                sentAt: Date.now(),
-            }
-            mailService.save(newMail)
-            this.$router.push('/mail')
-        }
-    },
-    computed: {
-
-    },
-    unmounted() { },
-}
-
+  },
+  computed: {},
+  unmounted() {},
+};

@@ -6,7 +6,6 @@ import mailDetails from './apps/mail/views/mail-details.cmp.js'
 import bookApp from './views/book-app.cmp.js'
 import mailCompose from './apps/mail/views/mail-compose.cmp.js'
 import noteCompose from './apps/keep/views/note-compose.cmp.js'
-//edited!!!!
 const routes = [
     {
         path: '/',

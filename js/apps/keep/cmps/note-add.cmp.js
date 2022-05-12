@@ -58,8 +58,6 @@ export default {
         desc: null,
       };
       var descText;
-      // if (addDetails.noteType === 'note-todo') descText = 'note'
-      // if (!this.txt) return { answer:false , desc:"enter "}
     },
     addTodo() {
       if (!this.todoItem) return;

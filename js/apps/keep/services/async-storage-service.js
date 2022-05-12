@@ -1,4 +1,3 @@
-//REPLICATE
 export const storageService = {
     query,
     get,

@@ -1,4 +1,3 @@
-//REPLICATE
 export const storageService = {
     query,
     get,
@@ -21,11 +20,6 @@ function get(entityType, entityId) {
             return found;
          })
 }
-
-// function getORIGINAL(entityType, entityId) {
-//     return query(entityType)
-//         .then(entities => entities.find(entity => entity.id === entityId))
-// }
 
 function post(entityType, newEntity) {
     newEntity.id = _makeId()

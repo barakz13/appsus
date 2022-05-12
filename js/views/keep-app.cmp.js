@@ -122,7 +122,6 @@ export default {
       else note.info.todos[foundIdx].doneAt = null;
 
       noteService.save(note).then(() => (this.noteEditKey += 1));
-      // .then(() => this.updateNotes());
     },
     editEvt(note) {
       this.noteEditId = note.id;
@@ -134,17 +133,13 @@ export default {
       this.currWindow = 'main';
       var note = noteService.getEmptyNote();
 
-      //   background color
       note.style = {};
       note.style.backgroundColor = this.randomNoteColor();
 
-      //   type
       note.type = addDetails.noteType;
 
-      //text
       note.info.txt = addDetails.txt;
 
-      //if video/img txt=url, title=txt
       if (
         addDetails.noteType === 'note-video' ||
         addDetails.noteType === 'note-img'
@@ -177,22 +172,18 @@ export default {
       note.style.backgroundColor = noteColor;
       noteService.save(note).then(() => this.updateNotes());
     },
-    //v
     pinEvt(note) {
       note.isPinned = true;
 
       noteService.save(note).then(() => this.updateNotes());
     },
-    //v
     unpinEvt(note) {
       note.isPinned = false;
       noteService.save(note).then(() => this.updateNotes());
     },
-    //v
     removeEvt(note) {
       noteService.remove(note.id).then(() => this.updateNotes());
     },
-    //v
     duplicateEvt(note) {
       var dupNote = JSON.parse(JSON.stringify(note));
       dupNote.id = null;
@@ -200,18 +191,18 @@ export default {
     },
 
     emailEvt(note) {
-      var subject = 'my note';
+      var subject = 'My Note';
       var body;
       if (note.type === 'note-txt') {
         body = note.info.txt;
       }
       if (note.type === 'note-img') {
         subject = note.info.txt;
-        body = note.info.url;
+        body = encodeURIComponent(note.info.url);
       }
       if (note.type === 'note-video') {
         subject = note.info.txt;
-        body = note.info.url;
+        body = encodeURIComponent(note.info.url);
       }
       if (note.type === 'note-todos') {
         subject = note.info.txt;
@@ -220,7 +211,7 @@ export default {
       var url = '/mail/compose/';
       var urlAndParams = `${url}subject=${subject}&body=${body}`;
 
-      router.push({ path: '/keep', params: '' });
+      router.push({ path: `${urlAndParams}`, params: '' });
     },
     filterNotes() {
       if (!this.filterByTerm || this.filterByTerm === '') {

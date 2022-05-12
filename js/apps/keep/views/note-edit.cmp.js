@@ -7,7 +7,6 @@ export default {
   props: ['noteId'],
   template: `
 
-                  <div>Edit Note</div>
                   <!-- txt view -->
                   <div v-if='txtView' class="preview-div-edit-text">
                       <div>
@@ -126,7 +125,6 @@ export default {
       );
       if (!foundIdx) return;
       this.note.info.todos.splice(foundIdx, 1);
-      // this.$emit("removeTodo", note, todo);
     },
     inverttodo(note, todo) {
       this.$emit('invertTodo', note, todo);
