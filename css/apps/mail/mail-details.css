@@ -1,79 +1,89 @@
 .mail-details-container {
-    width: 90%;
-    margin-left: 5%;
-    height: 80vh;
-    text-align: center;
-    border-style: none solid none solid;
-    border-width: 1px;
+  width: 90%;
+  margin-left: 5%;
+  height: 80vh;
+  text-align: center;
+  border-style: none solid none solid;
+  border-width: 1px;
 }
 
 .mail-details {
-    height: 100%;
-    width: 90%;
-    margin-left: 5%;
+  height: 100%;
+  width: 90%;
+  margin-left: 5%;
 }
 
 .mail-details-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 35px;
 }
 
 .mail-details-subject {
-    line-break: anywhere;
-    text-align: start;
-    width: 85%;
-    margin-bottom: 0px;
+  line-break: anywhere;
+  text-align: start;
+  flex: 1;
+  margin-bottom: 0px;
 }
 
 .btn-save-as-note {
-    background: none;
-    border: none;
+  background: none;
+  border: none;
 }
 
 .mail-router-link-save {
-    text-decoration: none;
-    color: black;
-    margin-right: 19px;
+  text-decoration: none;
+  color: black;
+  margin-right: 19px;
 }
 
 .mail-router-link-back {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 .mail-details-body {
-    height: 80%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-around;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
 }
 
 .mail-from {
-    margin-top: -36px;
+  margin-top: -36px;
 }
 
 .mail-date {
-    margin-bottom: -30px;
+  margin-bottom: -30px;
 }
 
 .mail-body {
-    text-align: start;
-    line-height: 35px;
+  text-align: start;
+  line-height: 35px;
 }
 
 @media (max-width: 750px) {
-    .mail-details-container {
-        height: 862px;
-        border-bottom: none;
-    }
+  .mail-details-container {
+    height: 862px;
+    border-bottom: none;
+  }
 
-    .mail-details-body {
-        justify-content: flex-start;
-    }
+  .mail-details-body {
+    justify-content: flex-start;
+    margin-top: 50px;
+  }
 
-    .mail-from {
-        margin-top: 0px;
-    }
+  .mail-body {
+    margin-top: 30px;
+  }
+
+  .mail-date {
+    margin-top: 20px;
+  }
+
+  .mail-from {
+    margin-top: 0px;
+  }
 }
