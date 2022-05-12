@@ -1,0 +1,117 @@
+#from,
+#to {
+  width: 50px;
+}
+
+.book-filter > * {
+  margin: 5px;
+}
+
+.book-filter-bottom-row {
+  display: flex;
+  justify-content: space-evenly;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  .book-filter-bottom-row {
+    width: 250px;
+  }
+}
+
+.book-filter-label-from {
+}
+.book-filter-label-to {
+}
+.book-filter-label-max {
+}
+
+.book-price-red {
+  color: red;
+}
+
+.book-price-green {
+  color: green;
+}
+
+.book-pic {
+  width: 80px;
+  height: 120px;
+}
+
+.book-app {
+  text-align: center;
+  min-height: 80vh;
+}
+
+.book-filter {
+  padding-top: 20px;
+}
+
+.book-edit {
+  background-color: lightpink;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.book-details {
+  background-color: #00ddff;
+  padding: 20px;
+  text-align: center;
+  height: 80vh;
+}
+
+.book-details img {
+  width: 150px;
+}
+
+.book-details-links {
+  margin-top: 10px;
+}
+
+.book-list {
+  margin-top: 15px;
+}
+
+.book-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  inset-inline-end: 0px;
+  inset-inline-start: 0px;
+}
+
+li {
+  padding: 0;
+}
+
+.loading {
+  width: 90%;
+  margin-left: 5%;
+}
+
+.loading-img {
+  margin-left: 38%;
+}
+
+.book-preview > * {
+  padding: 0;
+}
+
+.book-preview-container {
+  border: 1px solid black;
+  margin: 10px;
+  width: 200px;
+  height: 200px;
+  background-color: #00ddff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+}

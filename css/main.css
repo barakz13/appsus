@@ -18,6 +18,8 @@
 @import './apps/keep/components/toolbar.css';
 @import './apps/keep/components/note-preview-cmp.css';
 
+@import './apps/book/main.css';
+
 * {
   box-sizing: border-box;
 }
