@@ -5,7 +5,9 @@
 ## Description
 
 Book Store: Book store like app - A list of books available with detailed info on each. An option to filter between them.
+<br>
 E-Mail: Gmail like app - An e-mail app including inbox, filter, sort and compose. You can turn a mail into a note.
+<br>
 Notes App: Google Keep like app - Create, Edit and Manage a list of notes. You can turn a note into a new mail.
 
 ## Software and Languages used
