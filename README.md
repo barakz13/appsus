@@ -12,7 +12,7 @@ Notes App: Google Keep like app - Create, Edit and Manage a list of notes. You c
 
 ## Software and Languages used
 
-Vue 2 CDN + CSS.
+Vue 3 CDN + CSS.
 
 Hope you'd like it!
 
