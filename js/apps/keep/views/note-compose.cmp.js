@@ -1,4 +1,3 @@
-import { utilService } from '../services/util-service.js';
 import { router } from '../../../router.js';
 import { noteService } from '../services/note.service.js';
 export default {

@@ -1,4 +1,3 @@
-import { storageService } from '../services/async-storage-service.js';
 import { noteService } from '../services/note.service.js';
 import { utilService } from '../services/util-service.js';
 

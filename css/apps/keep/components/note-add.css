@@ -1,36 +1,29 @@
-
-
 .add-note-border {
-    margin-top:10px;
-    margin-bottom:18px;
-    border-radius:10px;
-    padding:10px;
-    background-color:black;
-    border:1px solid black;
-    margin-left:10rem;
-    margin-right:10rem;
+  margin-top: 10px;
+  margin-bottom: 18px;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: black;
+  border: 1px solid black;
+  margin-left: 10rem;
+  margin-right: 10rem;
 }
 .addnote-menu-last-con {
-    align-items:center;
-    /* background-color:blue; */
-    display:flex;
+  align-items: center;
+  display: flex;
 }
 
 .add-note-border > input {
-    height:30px;
+  height: 30px;
 }
 
-
 .addnote-menu-last-con-compose > * {
-    margin-left:10px;
-    margin-right:10px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .addnote-menu-last-con-compose {
-    align-items:center;
-    /* background-color:blue; */
-    display:flex;
-    justify-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
-
-

@@ -1,39 +1,37 @@
-
- .note-text-con {
-     text-align:left;
-     padding-top:5px;
-     padding-bottom:5px;
- }
- .user-list-con {
-     text-align:center;
- }
+.note-text-con {
+  text-align: left;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.user-list-con {
+  text-align: center;
+}
 
 /* main results container */
 .input-colorpicker {
-    opacity: 0;
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    left: 0;
+  opacity: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .keep-logo {
-    max-width:90%;
-    height:4.625;
+  max-width: 90%;
+  height: 4.625;
 }
 /* every preview item */
 
 .main-text {
-    height:30px !important;
+  height: 30px !important;
 }
 
 .top-section-con {
-    display:block;
-
+  display: block;
 }
 .top-section {
-    display:flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .main-compose-con,
@@ -41,26 +39,17 @@
 .add-note-border,
 .bottom-section,
 .top-section-con {
-    font-family: sans-serif;
+  font-family: sans-serif;
 }
 
 .note-img {
-    width:100%;
-    height:100%;
-    border-radius:7px;
+  width: 100%;
+  height: 100%;
+  border-radius: 7px;
 }
 .note-text-con {
-    align-self: flex-start;
+  align-self: flex-start;
 }
-
-
-
-
-
-
-
-
-
 
 .slide-fade-enter-active {
   transition: all 0.5s ease-out;
@@ -71,99 +60,95 @@
 }
 .slide-fade-enter-from,
 .slide-fade-leave-to {
-  /* transform: translateX(20px); */
   opacity: 0;
 }
 .logo-con {
-    text-align:center;
-    width:100%;
-    background-color:white;
+  text-align: center;
+  width: 100%;
+  background-color: white;
 }
 .note-edit-firstline-btns {
-    width:100%;
-    /* background-color:blueviolet; */
-    display:flex;
-    justify-content: space-evenly;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
 }
 .addnote-con {
-    border-radius:10px;
-    padding:10px;
-    background-color: white;
-    width:100%;
-    display:flex;
-    border:1px solid black;
-    justify-content: center;
-    flex-direction: row;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  border: 1px solid black;
+  justify-content: center;
+  flex-direction: row;
 }
 .add-menu-middle-con {
-    /* background-color:blueviolet; */
-    min-width:10px;
+  min-width: 10px;
 }
 .note-filter-border {
-    margin-top:10px;
-    margin-bottom:18px;
-    max-width:100%;
-    padding:10px;
-    border-radius:10px;
-    
-    background-color:black;
-    border:1px solid black;
-    margin-left:10rem;
-    margin-right:10rem;
+  margin-top: 10px;
+  margin-bottom: 18px;
+  max-width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+
+  background-color: black;
+  border: 1px solid black;
+  margin-left: 10rem;
+  margin-right: 10rem;
 }
 .note-edit-todos-add {
-    display:flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .add-note-border-compose {
-    width:280px;    
-    margin-top:10px;
-    border-radius:15px;
-    height:300px;
-    padding:10px;
-    background-color:blue;
-    border:1px solid black;
-    margin-left:10rem;
-    margin-right:10rem;
+  width: 280px;
+  margin-top: 10px;
+  border-radius: 15px;
+  height: 300px;
+  padding: 10px;
+  background-color: blue;
+  border: 1px solid black;
+  margin-left: 10rem;
+  margin-right: 10rem;
 }
 
-@media only screen and (min-width: 250px) and (max-width: 750px){ 
-
-    .logo-con {
-        text-align:center;
-        display:flex;
-        justify-content: center;
-    }
-    .note-edit-firstline-btns {
-        justify-content: space-between;
-    }
-    .addnote-con {
-        flex-direction: column;
-    }
-    .add-menu-middle-con {
-        display:none;
-    }
-    .main-text {
-        width:100%;
-    }
-    .note-filter-border {
-        margin-left:5px;
-        margin-right:5px;
-    }
-    .add-note-text {
-        margin-bottom:10px;
-    }
-    .note-edit-todos-add {
-        justify-content: space-between;
-    }
-    .note-edit-firstline-btns {
-        justify-content: space-around;
-        width:40%;
-    }
-    .add-note-border-compose {
-        margin-right:50px;
-        margin-left:50px;
-        max-width:250px;
-    }
- }
+@media only screen and (min-width: 250px) and (max-width: 750px) {
+  .logo-con {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  .note-edit-firstline-btns {
+    justify-content: space-between;
+  }
+  .addnote-con {
+    flex-direction: column;
+  }
+  .add-menu-middle-con {
+    display: none;
+  }
+  .main-text {
+    width: 100%;
+  }
+  .note-filter-border {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .add-note-text {
+    margin-bottom: 10px;
+  }
+  .note-edit-todos-add {
+    justify-content: space-between;
+  }
+  .note-edit-firstline-btns {
+    justify-content: space-around;
+    width: 40%;
+  }
+  .add-note-border-compose {
+    margin-right: 50px;
+    margin-left: 50px;
+    max-width: 250px;
+  }
+}
